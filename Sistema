@@ -1,0 +1,12 @@
+
+    public static void main(String[] args) {
+
+        Estudiante est = new Estudiante("1030", "Jaime", 20, "2024-ABC");
+        Docente prof = new Docente("1500", "Maritza", 45, "Ingeniero", 40, 50000);
+        Administrativo adm = new Administrativo("2010", "Raul", 50, "Decano", 2000000);
+
+        System.out.println(est);
+        System.out.println(prof);
+        System.out.println(adm);
+    }
+}
