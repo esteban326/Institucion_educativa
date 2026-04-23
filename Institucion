@@ -1,0 +1,29 @@
+    import java.util.ArrayList;
+    import java.util.List;
+
+    Public class Institucion{
+
+        public static void main(String[] args) {
+            List<Persona> listaPresona = new ArrayList();
+
+            Estudiante estudiante = new Estudiante(102030, "Pachita", 20, 78898);
+            listaPersonas.add(estudiante);
+
+            Docente docente = new Docente(52035, "Pachito", 66, "Ingeniero", 40, 180000);
+            listaPersonas.add(docente);
+
+            Administrativo administrativo = new Administrativo(25698, "Gloria", 50, "IA","Decano", 10000000);
+            listaPersonas.add(administrativo);
+
+           for(Persona persona : listaPersonas){
+            System.out.println(persona);
+           }
+
+            Persona estudiante1 = new Estudiante(1045230, "Juanita" , 190, 8596);
+            listaPErsonas.add(estudiante1);
+
+            for(Persona persona : listaPersonas){
+            System.out.println(persona);
+           }
+    }
+}
