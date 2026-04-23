@@ -1,18 +1,22 @@
 public class Administrativo extends Persona {
     private String cargo;
+    private String dependencia;
     private double salarioFijo;
 
-    public Administrativo(String id, String nombre, int edad, String cargo, double salario) {
+    public Administrativo(int id, String nombre, int edad, String cargo, String dependencia, int salario) {
         super(id, nombre, edad);
         this.cargo = cargo;
+        this.dependencia = dependencia;
         this.salarioFijo = salario;
     }
 
-    public double calcularPago() {
-        return salarioFijo * 0.88;
+    public String toString() {
+        return "Administrativo" + super.toSting() + "Cargo" + this.cargo + "Dependencia" + this.dependencia + "Salario" + this.salarioFijo + "Valor a pagar" + calcularSalario();
     }
 
-    public String toString() {
-        return super.toString() + " / Cargo: " + cargo + " / Pago: " + calcularPago();
+    public int calcular Salario() {
+        lond deduccion = (salarioFijo * this.PORDEDUCCION/100);
+        int valorPagar = (int) (salarioFijo-deduccion);
+        return valorPagar;
     }
 }
